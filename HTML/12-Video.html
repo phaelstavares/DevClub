@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+</head>
+<body>
+    
+    <!-- Por padrão, alguns navegadores não deixam o autoplay funcionar sem o aúdio mutado. -->
+    <video src="./video/NaoComentaEsseErro-RodolfoMori.mp4" controls controlsList="nodownload" autoplay muted poster="./img/Banner-DevClub-Video.png" width="400px"></video>
+
+    <!-- Caso algum formato de vídeo não for compatível, o navegador irá rodar o próximo arquivo. -->
+    <video controls poster="./img/Banner-DevClub-Video.png" width="400px">
+        <source src="./video/NaoComentaEsseErro-RodolfoMori.mp4">
+        <source src="./video/NaoComentaEsseErro-RodolfoMori.mkv">
+        <source src="./video/NaoComentaEsseErro-RodolfoMori.mov">
+    </video>
+
+</body>
+</html>
