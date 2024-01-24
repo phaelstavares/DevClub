@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <form action="" method="get" enctype="multipart/form-data">
+        <!--
+            "action" para encaminhar os dados ao servidor.
+            "method" como é enviado os dados. 
+            Se enviar um arquivo tipo "file" precisa avisar o servidor usando o "enctype".
+        -->
+
+        <h1>Digite seu Endereço</h1>
+        <label for="">
+            Rua:
+            <input type="text" name="rua" autocomplete="street-address">
+        </label>
+
+        <label for="">
+            Número:
+            <input type="number" name="numero" autocomplete="cc-number">
+        </label>
+
+        <label for="">
+            E-mail:
+            <input type="email" name="email" autocomplete="email">
+        </label>
+        
+        <br><br>
+
+        <label for="">
+            Foto:
+            <input type="file" name="arquivo">
+        </label>
+
+        <br><br>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar dados</button>
+    </form>
+    
+</body>
+</html>
