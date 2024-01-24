@@ -1,0 +1,14 @@
+h1 {
+    color: #0000ff;
+    background: #000000;
+}
+
+p {
+    color: #0000ff;
+    font-size: 20px;
+}
+
+button {
+    background: #00b100;
+    border-color: #005300;
+}
