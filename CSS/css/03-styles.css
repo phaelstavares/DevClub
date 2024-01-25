@@ -1,0 +1,62 @@
+* {
+    background: #9b9b9b;
+}
+/* Este seletor é usado para aplicar configurações para TODA a página (seletor universal). */
+
+
+/*  ID (#) 
+    Para configurar o "id" se usa "#" antes do nome.
+*/
+
+#titulo {
+    color: #006128;
+    font-size: 50px; /* Estabelecendo o tamanho da fonte. */
+}
+
+#paragrafo {
+    color: #010161;
+    font-size: 20px;
+    font-weight: bold; /* Deixando a fonte com mais peso (grossura da fonte). */
+}
+
+#botao {
+    background: #ffffff;
+}
+
+#outro-paragrafo {
+    color: #006356;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*  CLASS (.) 
+    Para configurar a "class" se usa "." antes do nome.
+*/
+
+.titulo {
+    color: #8a0000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.botao {
+    color: #ffffff;
+    background: #000000;
+}
+
+.texto {
+    color: #350101;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 
+    Posso utilizar as mesmas configurações para dois ou mais seletores diferentes utilizando a "," para separar.
+    (funciona em "class" e "id")
+*/
+.portugues, .english {
+    color: #ffffff;
+    background: #005850;
+}
