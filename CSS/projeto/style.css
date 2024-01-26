@@ -16,7 +16,7 @@ header {
     font-size: 24px;
     line-height: 29px;
     color: #989D9C;
-    cursor: pointer; /* Quando passar a mão nos links aparecer o cursor da mão */
+    cursor: pointer; /* Quando passar o mouse nos links aparece o cursor da mão */
     margin-right: 23px;
     display: inline-block;
     margin-bottom: 10px;
