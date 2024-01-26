@@ -25,7 +25,7 @@ header {
 .button-header {
     background: #665AE1;
     color: #ffffff;
-    border-radius: 20.5px;
+    border-radius: 20.5px; /* Permite arredondar as bordas de um elemento */
     width: 130px;
     height: 41px;
     border: none;
