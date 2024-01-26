@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    /* Não deixa a caixa crescer quando é colocado mais conteúdos dentro. */
+}
+
+.box-1 {
+    width: 100px;
+    height: 100px;
+    background: #e7ff14;
+    padding: 20px;
+    border: 10px dashed #2bff00;
+}
