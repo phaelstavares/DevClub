@@ -7,7 +7,7 @@ h1 {
     font-weight: 500; /* Deixando a fonte com mais peso (grossura da fonte). */
     font-family: "Roboto", sans-serif; /* O tipo de fonte do texto */
     font-style: italic; /* Deixar a fonte em itálico (deitado) */
-    text-transform: uppercase; /* Letras maiúsculas, minúsculas ou somente a primeira letra de cada palavra maiúscula. */
+    text-transform: uppercase; /* Letras maiúsculas, minúsculas ou somente a primeira letra maiúscula de cada palavra. */
     text-decoration: underline; /* Coloca algumas "decorações" no texto */
     text-shadow: 1px 1px 10px violet; /* Sombra no texto */
 }

@@ -1,0 +1,34 @@
+.box-1 {
+    width: 50px;
+    height: 50px;
+    background: #FF1493;
+    margin: 20px;
+}
+
+.box-2 {
+    width: 50px;
+    height: 50px;
+    background: #b349ff;
+    margin: 40px; /* Espaçamento por fora */
+    padding: 30px; /* Espaçamento de dentro para fora */
+}
+
+.box-3 {
+    width: 50px;
+    height: 50px;
+    background: #ffc014;
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 5px;
+    /* serve para o "padding" também */
+}
+
+.box-4 {
+    width: 50px;
+    height: 50px;
+    background: #3fff25;
+    padding: 10px 5px 30px 50px;
+    /* Atalho: top, right, bottom, left */
+}
