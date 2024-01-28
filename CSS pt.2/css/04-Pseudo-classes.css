@@ -20,7 +20,6 @@
     :nth-last-child() → seleciona o elemento baseado na sua posição, contando de trás para frente.
 */
 
-
 * {
     margin: 0;
     padding: 0;
@@ -32,11 +31,11 @@
     color: #ff0000;
 }
 
-p {
+.p {
     color: #7c00cf;
 }
 
-p:hover {
+.p:hover {
     color: #17c500;
 }
 
@@ -76,4 +75,32 @@ p:hover {
 
 .a-8:empty {
     background: #2b2bff;
+}
+
+li:first-child {
+    color: #ff0000;
+}
+
+.a-9 > li:last-child {
+    color: #0da100;
+}
+
+.a-10 > span:first-of-type {
+    color: #ff0000;
+}
+
+.a-10 > p:first-of-type {
+    color: #1900ff;
+}
+
+.a-11 :not(p) {
+    color: #cc2658;
+}
+
+.a-11 :nth-child(5) {
+    color: #d38a03;
+}
+
+.a-11 :nth-last-child(2) {
+    color: #03ccd3;
 }
