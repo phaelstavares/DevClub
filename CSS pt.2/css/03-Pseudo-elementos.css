@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input {
+    border: 1px solid #ff0000;
+    color: #0000ff;
+}
+
+p {
+    color: #0000ff;
+}
+
+a {
+    color: #0000ff;
+}
+
+/* 
+    Pseudo elementos
+    "first-letter" estilizar a primeira letra.
+    "first-line" estilizar a primeira linha.
+
+*/
+input::placeholder {
+    color: #ff00bf;
+}
+
+p::first-line{
+    color: #ff0000;
+}
+
+a::before {
+    content: "🚀";
+}
+
+a::after {
+    content: "😎";
+}
+
+/* 
+    "before" ou "after" antes ou depois.
+*/
