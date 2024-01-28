@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.a-1:hover {
+    color: #ff0000;
+}
+
+p {
+    color: #7c00cf;
+}
+
+p:hover {
+    color: #17c500;
+}
+
+.a-2:active {
+    color: #ff0000;
+}
+
+.a-3:visited {
+    color: #cc2658;
+}
+
+.a-4:checked {
+    width: 50px;
+    height: 50px;
+}
+
+.a-5:disabled {
+    width: 50px;
+    height: 50px;
+}
+
+.a-6:focus {
+    border: 2px solid #ff0000;
+    outline: none;
+}
+
+.a-7:read-only {
+    border: 2px solid #1900ff;
+    outline: none;
+}
+
+.a-8 {
+    width: 100px;
+    height: 100px;
+    background: #ff4040;
+}
+
+.a-8:empty {
+    background: #2b2bff;
+}
