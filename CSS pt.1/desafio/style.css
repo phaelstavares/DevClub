@@ -78,3 +78,119 @@ p {
 footer {
     margin-top: 30px;
 }
+
+@media screen and (max-width: 1286px) {
+    
+.link-header {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .button-header {
+        font-size: 25px;
+        width: 150px;
+        height: 60px;
+        line-height: 50px;
+    }
+
+    section {
+        width: auto;
+        height: auto;
+    }
+
+    p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .button-main {
+        font-size: 25px;
+        line-height: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    header {
+        margin: 44px 0 50px 76px;
+    }
+    
+    .link-header {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .button-header {
+        font-size: 27px;
+        width: 150px;
+        height: 60px;
+        line-height: 50px;
+    }
+
+    img {
+        position: static;
+        width: 350px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    section {
+        width: auto;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 90px;
+        width: auto;
+        height: auto;
+    }
+
+    p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .button-main {
+        font-size: 30px;
+        line-height: 40px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .link-header {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .button-header {
+        font-size: 20px;
+        width: 100px;
+        height: 40px;
+        line-height: 30px;
+    }
+
+    img {
+        position: static;
+        width: 250px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+        width: auto;
+        height: auto;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .button-main {
+        font-size: 20px;
+    }
+}
