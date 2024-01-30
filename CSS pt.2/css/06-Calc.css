@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa {
+    height: calc(100vh - 200px);
+    width: calc((50vw + 200px) / 2);
+    background: #ff0055;
+    color: #ffffff;
+}
