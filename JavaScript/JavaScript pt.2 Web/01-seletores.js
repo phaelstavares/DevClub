@@ -16,3 +16,19 @@ console.log(input)
 
 const elements = document.getElementsByClassName("paragraph-js")
 console.log(elements)
+
+
+const tagName = document.getElementsByTagName("h1")
+console.log(tagName)
+
+
+const byName = document.getElementsByName("nome-completo")
+console.log(byName)
+
+
+const query = document.querySelector("#main-input")
+console.log(query)
+
+
+const queryAll = document.querySelectorAll("input")
+console.log(queryAll)
