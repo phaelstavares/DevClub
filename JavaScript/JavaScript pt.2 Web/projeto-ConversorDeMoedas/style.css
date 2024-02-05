@@ -5,4 +5,128 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    outline: none;
+    /* Linha azul/preta quando clica em um 'input' por exemplo, declarado 'none' não vai aparecer mais. */
+}
+
+body {
+    background-color: #8A51FC;
+    /* A diferença entre 'background-color' e 'background', é que o 'background' é um atalho e pode configurar vários elementos em uma linha já o 'background-color' troca somente a cor de fundo. */
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 20px 0px; /* 'top e bottom' 20px e 'left e right' 0px */
+    margin-left: auto;
+    margin-right: auto;
+    /* Quando um elemento for 'display: block', para centralizar é só utilizar 'auto' no 'margin-left e right'.*/
+}
+
+main {
+    width: 374px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto;
+    /* 0px 'top e bottom' e 'auto' em 'left e right' para centralizar. */
+    padding: 44px 24px 23px; /* cima, os lados, baixo */
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select, input {
+    background: #ffffff;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%; /* Ocupa todo o espaço disponível que o select tem. */
+    margin-bottom: 24px;
+    appearance: none; /* Tira a seta do canto */
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+input {
+    cursor: text; /* Para o mouse ficar com aparência de escrever. */
+}
+
+button {
+    background: #772FD3;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 100%; /* Ocupa todo o espaço disponível. */
+    border: none;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9; /* Aplica transparência */
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+section {
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seta-img {
+    margin: 15px 0;
+}
+
+.caixas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /* A distância entre os itens. */
+}
+
+.moeda {
+    color: #777777;
+    font-size: 14px;
+}
+
+.valor-moeda {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+footer {
+    margin: 30px 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+a:active {
+    opacity: 0.3;
 }
