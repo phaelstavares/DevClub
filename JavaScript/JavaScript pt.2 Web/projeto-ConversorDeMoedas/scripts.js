@@ -8,11 +8,12 @@ function converteValores(){
 
     const dolarDoDia = 5.1 // Dolar do dia
     const euroDoDia = 6.2 // Euro do dia
+    const libraDoDia = 6.24 // Libra do dia
 
 
     if (moedaSelect.value == "dolar"){
         // Se o select estiver selecionado o valor de 'dolar' entre aqui
-        valorMoeda02.innerHTML = new Intl.NumberFormat("en-us", {
+        valorMoeda02.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
         }).format(inputValor / dolarDoDia) // O valor do input dividido pelo valor da moeda.
@@ -21,14 +22,23 @@ function converteValores(){
 
     if (moedaSelect.value == "euro"){
         // Se o select estiver selecionado o valor de 'euro' entre aqui
-        valorMoeda02.innerHTML = new Intl.NumberFormat("de-de", {
+        valorMoeda02.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(inputValor / euroDoDia)
     }
 
+    if (moedaSelect.value == "libra"){
+        // Se o select estiver selecionado o valor de 'euro' entre aqui
+        valorMoeda02.innerHTML = new Intl.NumberFormat("de-DE", {
+            style: "currency",
+            currency: "GBP"
+        }).format(inputValor / libraDoDia)
+    }
 
-    valorMoeda01.innerHTML = new Intl.NumberFormat("pt-br", {
+
+
+    valorMoeda01.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL"
     }).format(inputValor)
@@ -48,6 +58,11 @@ function changeMoeda(){
     if (moedaSelect.value == "euro") {
         moedaNome.innerHTML = "Euro" // trocando texto
         moedaImagem.src = "./assets/euro.png" // trocando a imagem
+    }
+
+    if (moedaSelect.value == "libra") {
+        moedaNome.innerHTML = "Libra"
+        moedaImagem.src = "./assets/libra.png"
     }
     converteValores() // Chamando a função quando o select trocar a imagem e converter junto para não confundir o usuário.
 }
