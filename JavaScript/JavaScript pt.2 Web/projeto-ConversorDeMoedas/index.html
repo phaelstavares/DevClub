@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Moedas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/moeda-logo.png" type="image/x-icon">
+    <title>Conversor de Moedas</title>
 </head>
 <body>
 
@@ -20,24 +21,24 @@
 
         <label>
             Converter <b>para</b>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
+            <select class="moedas-a-escolher">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
 
         <label>
             Valor
-            <input placeholder="R$10.000,00">
+            <input class="input-valor" placeholder="R$10.000,00">
         </label>
 
-        <button>Converter</button>
+        <button class="buttonConverte">Converter</button>
 
         <section>
             <div class="caixas">
                 <img src="./assets/real.png" alt="logo-moeda">
                 <p class="moeda">Real</p>
-                <p class="valor-moeda">R$ 0,00</p>
+                <p class="valor-moeda-01">R$ 0,00</p>
             </div>
 
             <div class="seta-img">
@@ -47,7 +48,7 @@
             <div class="caixas">
                 <img src="./assets/dolar.png" alt="logo-moeda">
                 <p class="moeda">Dólar</p>
-                <p class="valor-moeda">US$ 0,00</p>
+                <p class="valor-moeda-02">US$ 0,00</p>
             </div>
         </section>
 
@@ -56,4 +57,5 @@
         <p>Criado por <a href="https://github.com/phaelstavares" target="_blank">@phaelstavares</a></p>
     </footer>
 </body>
+    <script src="./scripts.js"></script>
 </html>
