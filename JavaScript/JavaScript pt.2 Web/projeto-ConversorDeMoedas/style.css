@@ -36,6 +36,7 @@ label {
     color: #777777;
     font-weight: 400;
     font-size: 14px;
+    
 }
 
 select, input {
@@ -51,6 +52,7 @@ select, input {
     font-size: 16px;
     color: #555555;
     cursor: pointer;
+    box-shadow: 2px 2px 5px 0px #00000026; /* Sombra */
 }
 
 input {
@@ -67,6 +69,7 @@ button {
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 button:hover {
