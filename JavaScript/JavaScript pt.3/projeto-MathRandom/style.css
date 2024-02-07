@@ -20,12 +20,13 @@ img {
     margin-bottom: 156px;
 }
 
-h1 {
+h2 {
     color:#FFFFFF;
     font-weight: 400;
     font-size: 32px;
     line-height: 37.5px;
     text-align: center;
+    margin-bottom: 26px;
 }
 
 div {
@@ -38,7 +39,7 @@ input {
     margin: 10px;
     border-radius: 14px;
     padding: 10px;
-    border: 1px;
+    border: 1px solid #4747476c;
     background: #474747;
     color: #FFFFFF;
     font-weight: 500;
@@ -58,6 +59,7 @@ button {
     box-shadow: 0px 5px 5px 0px #aec34654;
     font-size: 40px;
     margin-top: 60px;
+    cursor: pointer;
 }
 
 button:hover {
