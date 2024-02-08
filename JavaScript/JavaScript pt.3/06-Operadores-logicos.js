@@ -34,7 +34,7 @@ const token = true
 if(senhaLog || verfEmail || token){
     console.log("Logado com Sucesso!")
 } else {
-    console.log("Seu autenticação FALHOU.")
+    console.log("Sua autenticação FALHOU.")
 }
 
 
@@ -46,7 +46,7 @@ const token2 = false
 if(senhaLog2 && verfEmail2 && token2){
     console.log("Logado com Sucesso!")
 } else {
-    console.log("Seu autenticação FALHOU.")
+    console.log("Sua autenticação FALHOU.")
 }
 
 
@@ -58,5 +58,5 @@ const token3 = true
 if( ! (senhaLog3 && verfEmail3 && token3) ){
     console.log("Logado com Sucesso!")
 } else {
-    console.log("Seu autenticação FALHOU.")
+    console.log("Sua autenticação FALHOU.")
 }
