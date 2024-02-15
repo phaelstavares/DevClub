@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio For of</title>
+</head>
+<body>
+
+    <input placeholder="Digite o nome do contato">
+    <p></p>
+    <button onclick="search()">Procurar Contato</button>
+
+</body>
+<script>
+
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const contatos = [
+        { nome: "Raphael", numero: "(32) 98456-1234" },
+        { nome: "Julia", numero: "(19) 98456-1234" },
+        { nome: "Elaine", numero: "(31) 98456-1234" },
+        { nome: "Pedro", numero: "(11) 98456-1234" },
+        { nome: "Rodolfo", numero: "(14) 98456-1234" },
+    ]
+
+    function search(){
+        let i = 0
+        while(i < contatos.length){
+            if(input.value.toUpperCase() === contatos[i].nome.toUpperCase()){
+                // .toLowerCase() deixa procurar nomes mesmo com letras minúsculas e maiúsculas.
+
+                p.innerHTML = `Contato encontrado: <br> Nome: ${contatos[i].nome} <br> Tel: ${contatos[i].numero}`
+                // é possível colocar uma variável dentro com a crase ` `
+
+                break
+                // para de rodar quando encontrar o elemento.
+
+            } else {
+                p.innerHTML = "Contato não encontrado."
+            }
+            
+            i++;
+        }
+    }
+
+</script>
+</html>
