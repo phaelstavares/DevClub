@@ -1,5 +1,5 @@
 /*
-    ForEach (item, index, array)
+    ForEach (element, index, array)
 */
 
 const users = [
