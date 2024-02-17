@@ -22,5 +22,3 @@ function sob(valor1, valor2){
 }
 
 console.log(sob(10, 70), " é o resultado.") // retorna
-
-console.log("\n") // pular linha no terminal
