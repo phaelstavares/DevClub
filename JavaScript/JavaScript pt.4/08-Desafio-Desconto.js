@@ -34,4 +34,5 @@ cart.forEach(valor => {
 });
 
 
-console.log(`O valor final da compra foi R$ ${valorTotal}, porém você teve desconto de 10% e ficou R$ ${valorFinal}.`)
+console.log(`O valor final da compra foi R$ ${valorTotal.toFixed(2)}, porém você teve desconto de 10% e ficou R$ ${valorFinal.toFixed(2)}.`)
+// toFixed() é uma ferramenta interna do JavaScript que ela vai falar quantas casas decimais eu quero.
