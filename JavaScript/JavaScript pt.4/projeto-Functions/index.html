@@ -11,15 +11,16 @@
         <h1>JokenPô</h1>
 
         <div class="buttons">
-            <button id="pedra"><figure>&#x1F44A;</figure></button>
-            <button id="papel"><figure>&#x1f590;</figure></button>
-            <button id="tesoura"><figure>&#x270c;</figure></button>
+            <button id="pedra" onclick="clickBotao('pedra')"><figure>&#x1F44A;</figure></button>
+            <button id="papel" onclick="clickBotao('papel')"><figure>&#x1f590;</figure></button>
+            <button id="tesoura" onclick="clickBotao('tesoura')"><figure>&#x270c;</figure></button>
         </div>
 
         <p class="resultado"></p>
 
-        <p class="pontuacao-usu">Sua pontuação: <span>0</span></p>
-        <p class="pontuacao-bot">Pontuação da Alexa: <span>0</span></p>
+        <p class="pontuacao-usu">Sua pontuação: <span id="pontuacao-humano">0</span></p>
+        <p class="pontuacao-bot">Pontuação da Alexa: <span id="pontuacao-maquina">0</span></p>
     </div>
 </body>
+    <script src="./script.js"></script>
 </html>
