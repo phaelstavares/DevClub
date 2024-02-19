@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+body {
+    background: #fbff006e;
+    display: flex;
+    justify-content: center; /* centralizar na horizontal */
+    align-items: center; /* centralizar na vertical */
+    min-height: 100vh; /* body ocupando 100% da tela */
+}
+
+.caixa {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* com o 'display: flex' o 'flex-direction: column' deixa os elementos em colunas e não um do lado do outro. */
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out; /* animação de passar o mouse fica mais lento */
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px; /* para usar o 'gap' precisa ter o 'display: flex' ('gap' é a distância entre os itens) */
+}
+
+#pedra {
+    background-color: #0000ff59;
+}
+
+#papel {
+    background-color: #00ff2259;
+}
+
+#tesoura {
+    background-color: #ff5e0059;
+}
+
+figure {
+    filter: drop-shadow(4px 2px 10px #0000008f);
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.pontuacao-usu > span{
+    color: #ff8800;
+}
+
+.pontuacao-bot > span{
+    color: #ff5100;
+}
