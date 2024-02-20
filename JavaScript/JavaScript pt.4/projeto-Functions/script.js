@@ -7,6 +7,14 @@ let humanoScoreNumber = 0
 let botScoreNumber = 0
 
 
+// ENUMS
+const GAME_OPTIONS = { // valores fixos/evita cometer erros em códigos grandes
+    PEDRA: "pedra",
+    PAPEL: "papel",
+    TESOURA: "tesoura"
+}
+
+
 // escolha humana
 const clickBotao = (escolhaHumana) => {
     jogarGame(escolhaHumana, playBot())
@@ -16,7 +24,7 @@ const clickBotao = (escolhaHumana) => {
 
 // a escolha aleatória do bot
 const playBot = () => {
-    const escolha = ["pedra", "papel", "tesoura"]
+    const escolha = [GAME_OPTIONS.PEDRA, GAME_OPTIONS.PAPEL, GAME_OPTIONS.TESOURA]
     const randomNumber = Math.floor(Math.random() * 3) // número aleatório
 
     return escolha[randomNumber]
@@ -31,9 +39,9 @@ const jogarGame = (humano, bot) => {
     }
     
     else if(
-        (humano === "papel" && bot === "pedra") || 
-        (humano === "pedra" && bot === "tesoura") || 
-        (humano === "tesoura" && bot === "papel")){
+        (humano === GAME_OPTIONS.PAPEL && bot === GAME_OPTIONS.PEDRA) || 
+        (humano === GAME_OPTIONS.PEDRA && bot === GAME_OPTIONS.TESOURA) || 
+        (humano === GAME_OPTIONS.TESOURA && bot === GAME_OPTIONS.PAPEL)){
 
         humanoScoreNumber++
         humanoPontuacao.innerHTML = humanoScoreNumber
