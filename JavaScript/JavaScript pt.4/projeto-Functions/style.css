@@ -46,6 +46,23 @@ button:hover {
     gap: 40px; /* para usar o 'gap' precisa ter o 'display: flex' ('gap' é a distância entre os itens) */
 }
 
+.escolhas {
+    margin-top: 10px;
+}
+
+.escolhas > span {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.resultado {
+    margin-bottom: 25px;
+}
+
+.resultado > span {
+    text-transform: uppercase;
+}
+
 #pedra {
     background-color: #0000ff59;
 }

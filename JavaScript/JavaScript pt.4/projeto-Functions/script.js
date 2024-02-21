@@ -1,6 +1,7 @@
 const result = document.querySelector(".resultado") // pegando o parágrafo para escrever o resultado
 const humanoPontuacao = document.querySelector("#pontuacao-humano")
 const botPontuacao = document.querySelector("#pontuacao-maquina")
+const escolhas = document.querySelector(".escolhas")
 
 
 let humanoScoreNumber = 0
@@ -35,7 +36,7 @@ const jogarGame = (humano, bot) => {
     console.log("Humano: " + humano + " Bot: " + bot)
 
     if(humano === bot) {
-        result.innerHTML = "Resultado: Empate!"
+        result.innerHTML = "Resultado: <span> Empate! &#x1F504; </span>"
     }
     
     else if(
@@ -46,13 +47,16 @@ const jogarGame = (humano, bot) => {
         humanoScoreNumber++
         humanoPontuacao.innerHTML = humanoScoreNumber
         
-        result.innerHTML = "Resultado: Você ganhou!"
+        result.innerHTML = "Resultado: <span> Você ganhou! &#x2705; </span>"
+
     }
     
     else {
         botScoreNumber++
         botPontuacao.innerHTML = botScoreNumber
 
-        result.innerHTML = "Resultado: O bot ganhou!"
+        result.innerHTML = "Resultado: <span> O bot ganhou! &#x274E; </span>"
     }
+
+    escolhas.innerHTML = `Você escolheu: <span>${humano}</span> <br> O bot escolheu: <span>${bot}</span>`
 }
