@@ -55,7 +55,7 @@ const jogarGame = (humano, bot) => {
         botScoreNumber++
         botPontuacao.innerHTML = botScoreNumber
 
-        result.innerHTML = "Resultado: <span> O bot ganhou! &#x274E; </span>"
+        result.innerHTML = "Resultado: <span> O bot ganhou! &#x274C; </span>"
     }
 
     escolhas.innerHTML = `Você escolheu: <span>${humano}</span> <br> O bot escolheu: <span>${bot}</span>`
