@@ -4,7 +4,7 @@
     - Criar um novo array, a partir do array percorrido (array original)
     - Criar um novo array, com a mesma quantidade de itens do array original
     - Aceita 3 parâmetros
-        - item do array
+        - item do array     (OBRIGATÓRIO)
         - index
         - array completo
 */
