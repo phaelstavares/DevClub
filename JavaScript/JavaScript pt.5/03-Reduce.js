@@ -39,7 +39,7 @@ console.log(somasComp)
 
 // comparando o preço por kg e somando o total
 const carrinho = [
-    {produto: "Maça", precoKg: 3.55, kg: 1},
+    {produto: "Maçã", precoKg: 3.55, kg: 1},
     {produto: "Abóbora", precoKg: 5, kg: 1.3},
     {produto: "Morango", precoKg: 11.9, kg: 3}
 ]
