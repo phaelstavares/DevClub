@@ -30,6 +30,7 @@ header > a {
 header > a:hover{
     color: #C51111;
     transition: 0.5s;
+    font-size: 26px;
 }
 
 main {
@@ -54,7 +55,7 @@ main {
     font-size: 20px;
 }
 
-.botao-contato {
+.botao-contato, button { /* Ambos os botões */
     color: #ffffff;
     background-color: #C51111;
     border-radius: 3px;
@@ -65,6 +66,17 @@ main {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 30px;
+    transition: 0.5s;
+}
+
+.botao-contato:hover, button:hover { /* Ambos os botões */
+    color: #afafaf;
+    background-color: #790c0c;
+    transition: 0.5s;
+}
+
+.botao-contato:active, button:active { /* Ambos os botões */
+    opacity: 0.6;
 }
 
 .img-marioluigi {
@@ -74,12 +86,14 @@ main {
 .section-video {
     position: fixed;
     top: 0;
-    right: 0;
     z-index: -1;
 }
 
 video {
-    width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .sombra {
@@ -96,3 +110,58 @@ video {
     right: 20px;
     bottom: 20px;
 }
+
+.formulario-contato {
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    gap: 15px; /* Distanciamento entre os itens e é utilizado quando tem um 'display flex' */
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    padding: 20px;
+    
+    top: 30%;
+    left: -300px;
+}
+
+.formulario-contato input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    padding-left: 5px;
+    outline-color: #790c0c;
+}
+
+.formulario-contato textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    padding-left: 5px;
+    padding-top: 5px;
+    outline-color: #790c0c; /* Altera a cor da borda do input (borda ativada quando é clicada) */
+    resize: none; /* Desabilita a opção de puxar a textarea */
+}
+
+.formulario-contato button {
+    margin-top: 10px;
+    position: relative;
+    left: 15%;
+}
+
+.sombra-formulario {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    /* auxilia na construção de efeitos degrade */
+}
+
+/*
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+*/
