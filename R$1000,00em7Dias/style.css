@@ -4,8 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    
+}
+
+main {
+    display: flex;
+    align-items: center; /* centralizar os itens (depois de ativar o flex) */
+    justify-content: space-around; /* Criar um espaço entre os elementos (sections) */
+    padding: 100px;
+    height: 100vh; /* ocupa a tela inteira na vertical */
+}
+
+.section-sobre {
+    width: 50%;
+}
+
 .logo-mario {
     height: 200px;
+    margin-bottom: 40px;
 }
 
 .botao-contato {
@@ -18,12 +35,20 @@
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 40px;
 }
 
 .img-marioluigi {
     height: 500px;
 }
 
-main {
-    display: flex;
+.section-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+video {
+    width: 100vw;
 }
