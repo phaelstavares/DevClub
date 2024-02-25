@@ -2,10 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+header > img {
+    width: 60px;
+}
+
+header > a {
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header > a:hover{
+    color: #C51111;
+    transition: 0.5s;
 }
 
 main {
@@ -22,7 +46,12 @@ main {
 
 .logo-mario {
     height: 200px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.paragrafo {
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .botao-contato {
@@ -35,7 +64,7 @@ main {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .img-marioluigi {
@@ -51,4 +80,19 @@ main {
 
 video {
     width: 100vw;
+}
+
+.sombra {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); /* auxilia na construção de efeitos degrade */
+    position: fixed;
+    top: 0;
+}
+
+.link-whatsapp > img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 }
