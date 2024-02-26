@@ -38,7 +38,7 @@ header > a {
     transition: 0.5s;
 }
 
-header > a:hover{
+header > a:hover {
     color: #C51111;
     transition: 0.5s;
     font-size: 26px;
@@ -168,4 +168,54 @@ video {
     margin-top: 10px;
     position: relative;
     left: 15%;
+}
+
+
+/* 
+    Media queries - Responsividade 
+
+    max -> valor menor que
+    min -> valor maior que
+*/
+
+@media(max-width: 1100px) {
+    .paragrafo {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    .section-sobre {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img-marioluigi {
+        width: 80vw;
+        height: auto; /* Colocando auto, a imagem não fica distorcida. */
+    }
+
+    header {
+        margin: 20px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header > img {
+        display: none;
+    }
+
+    header > a {
+        font-size: 20px;
+    }
+
+    header > a:hover {
+        font-size: 21px;
+    }
 }

@@ -43,11 +43,13 @@
         <img src="./assets/img/whatsapp.png" alt="Link para o WhatsApp">
     </a>
 
-    <form class="formulario-contato">
-        <input placeholder="Seu nome">
-        <input placeholder="Seu telefone">
-        <textarea placeholder="Digite seu problema aqui..."></textarea>
-        <button>Pedir Orçamento</button>
+    <form class="formulario-contato" 
+        action="https://formcarry.com/s/yb_YohoGxra" method="POST" enctype="multipart/form-data">
+
+        <input placeholder="Seu nome" type="text" name="Nome">
+        <input placeholder="Seu telefone" type="tel" name="Telefone">
+        <textarea placeholder="Digite seu problema aqui..." name="Problema"></textarea>
+        <button type="submit">Pedir Orçamento</button>
     </form>
 </body>
     <script src="./scripts.js"></script>
