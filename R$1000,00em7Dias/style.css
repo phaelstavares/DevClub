@@ -36,6 +36,7 @@ header > a {
     font-size: 24px;
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 header > a:hover {
@@ -63,7 +64,8 @@ main {
 
 .paragrafo {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 
 .botao-contato, button { /* Ambos os botões */
@@ -81,8 +83,8 @@ main {
 }
 
 .botao-contato:hover, button:hover { /* Ambos os botões */
-    color: #afafaf;
-    background-color: #790c0c;
+    color: #000000;
+    background-color: #C51111;
     transition: 0.5s;
 }
 
