@@ -36,10 +36,6 @@ header button:hover {
     transition: 0.5s;
 }
 
-main {
-    visibility: collapse;
-}
-
 main ul {
     list-style: none;
     display: grid;
