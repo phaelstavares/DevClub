@@ -1,5 +1,5 @@
 /*
-    this -> este, esta, insto...
+    this -> este, esta, isto...
 
     No JavaScript, o this referência:
     - Node.js -> module.exports
