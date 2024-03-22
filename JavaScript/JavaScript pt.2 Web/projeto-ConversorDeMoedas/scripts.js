@@ -1,14 +1,19 @@
 const buttonConverte01 = document.querySelector(".buttonConverte")
 const moedaSelect = document.querySelector(".moedas-a-escolher")
 
-function converteValores(){
+async function converteValores (){
     const inputValor = document.querySelector(".input-valor").value
     const valorMoeda01 = document.querySelector(".valor-moeda-01") // Valor em real
     const valorMoeda02 = document.querySelector(".valor-moeda-02") // Outras moedas
 
-    const dolarDoDia = 5.1 // Dolar do dia
-    const euroDoDia = 6.2 // Euro do dia
-    const libraDoDia = 6.24 // Libra do dia
+    // async await
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,GBP-BRL").then( response => response.json())
+    console.log(data)
+    // API desse site: https://docs.awesomeapi.com.br/api-de-moedas
+
+    const dolarDoDia = data.USDBRL.high // Dolar do dia
+    const euroDoDia = data.EURBRL.high // Euro do dia
+    const libraDoDia = data.GBPBRL.high // Libra do dia
 
 
     if (moedaSelect.value == "dolar"){
