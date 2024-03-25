@@ -1,3 +1,33 @@
+/*
+    flex-direction
+    row             -> itens colocados em linha (padrão).
+    row-reverse     -> semelhante a 'row', mas os itens são colocados na direção oposta.
+    column          -> os itens são colocados em colunas.
+    column-reverse  -> em colunas mas na direção oposta.
+
+
+    flex-wrap
+    nowrap          -> não quebra linha (padrão).
+    wrap            -> Os itens flexíveis serão quebrados em várias linhas, se necessário.
+    wrap-reverse    -> Este valor é parecido com o 'wrap', mas eles serão empilhados em direção oposta.
+
+
+    flex-flow
+    Serve para resumir o 'flex-direction' e o 'flex-wrap'. Ele combina duas propriedades em uma única declaração.
+
+
+    justify-content
+    Main Axis  -> Eixo principal
+    Cross Axis -> Eixo secundário
+
+    flex-start: Alinha os itens no início do contêiner.
+    flex-end: Alinha os itens no final do contêiner.
+    center: Centraliza os itens no contêiner ao longo do eixo principal.
+    space-between: Distribui os itens uniformemente ao longo do eixo principal, com espaçamento igual entre eles.
+    space-around: Distribui os itens uniformemente ao longo do eixo principal, com espaçamento igual ao redor deles.
+    space-evenly: Distribui os itens uniformemente ao longo do eixo principal, com espaçamento igual entre eles, incluindo o espaço antes do primeiro e depois do último item.
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +39,13 @@ h1 {
 }
 
 .container {
-    margin: 10px;
     border: 1px solid #9758A6;
-    display: flex; /* Por padrão os itens se alinham um do lado do outro. */
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin: 10px;
+    width: 800px;
+    justify-content: space-between;
 }
 
 .bloco {
