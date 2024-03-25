@@ -30,6 +30,9 @@
 
     align-items
     O eixo principal é determinado pelo 'flex-direction'. O align-items vai se basear no eixo secundário.
+
+    align-content
+    Essa propriedade permite controlar como as linhas de itens são distribuídas e alinhadas dentro do contêiner.
 */
 
 * {
