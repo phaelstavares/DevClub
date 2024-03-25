@@ -26,6 +26,10 @@
     space-between: Distribui os itens uniformemente ao longo do eixo principal, com espaçamento igual entre eles.
     space-around: Distribui os itens uniformemente ao longo do eixo principal, com espaçamento igual ao redor deles.
     space-evenly: Distribui os itens uniformemente ao longo do eixo principal, com espaçamento igual entre eles, incluindo o espaço antes do primeiro e depois do último item.
+
+
+    align-items
+    O eixo principal é determinado pelo 'flex-direction'. O align-items vai se basear no eixo secundário.
 */
 
 * {
@@ -45,7 +49,8 @@ h1 {
     height: 800px;
     margin: 10px;
     width: 800px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .bloco {
