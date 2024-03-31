@@ -43,8 +43,29 @@
     flex-basis
     Delimita o tamanho dos itens.
 
+
     flex-grow
     Permite aumentar a largura dos elementos dentro do contêiner para completar o espaço disponível no eixo principal.
+
+
+    flex-shrink
+    Quanto maior o valor atribuído à propriedade, mais um item flexível será reduzido em relação aos outros itens quando necessário para evitar o transbordamento do contêiner.
+
+
+    flex
+    Atalho do 'flex-basis', 'flex-grow' e 'flex-shrink'.
+
+
+    order
+    Alterar a ordem que os itens irão aparecer.
+
+
+    align-self
+    Vai configurar alinhamento apenas para um item.
+
+
+    Origamid -> Site para revisar sobre 'Display Flex'
+    https://origamid.com/projetos/flexbox-guia-completo/
 */
 
 * {
@@ -73,6 +94,17 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin: 10px;
-    flex-basis: 100px;
-    flex-grow: 1;
+    height: 100px;
+}
+
+.bloco2 {
+    background: #CDD728;
+    border: 5px solid #9758A6;
+    border-radius: 5px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    height: 100px;
+    align-self: center;
 }
