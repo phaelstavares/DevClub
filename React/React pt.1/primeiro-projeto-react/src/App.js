@@ -1,15 +1,16 @@
 import React from "react";
+import { Container, H1, P } from "./styles"
 
 // JSX
 export default function App ()  {
   const hello = "Hello react"
 
   return (
-    <div>
-      <h1>{hello}</h1>
-      <p>Bem-vindo(a)!</p>
-      <p>{5 + 5}</p>
-      <p>5 + 5</p>
-    </div>
+    <Container>
+      <H1>{hello}</H1>
+      <P>Bem-vindo(a)!</P>
+      <P>{5 + 5}</P>
+      <P>5 + 5</P>
+    </Container>
   )
 }
