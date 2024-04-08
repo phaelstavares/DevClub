@@ -64,6 +64,10 @@ export const Input = styled.input `
     font-size: 20px;
     line-height: 28px;
     color: #ffffff;
+
+    &::placeholder {
+        color: #ffffff;
+    }
 `
 
 export const Button = styled.button `
@@ -84,4 +88,12 @@ export const Button = styled.button `
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
 `
