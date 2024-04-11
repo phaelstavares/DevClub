@@ -1,9 +1,11 @@
 const express = require("express") // importei o express no projeto
 const uuid = require("uuid")
+const cors = require("cors")
 
-const porta = 3000
+const porta = 3001
 const app = express() // para facilitar coloquei o express dentro do variável 'app'
 app.use(express.json()) // avisar para o express que é para usar por padrão o '.json' em vez de 'xml' e etc...
+app.use(cors())
 
 /*
     - Query params -> meusite.com/users?name=raphael&age=19     // FILTROS
