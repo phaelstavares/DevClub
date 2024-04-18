@@ -1,11 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Container, Imagem, ContainerItens, H1, InputLabel, Input, Button, User } from "./styles"
 
 import axios from "axios"
 
-import People from "./assets/img-pessoas-inicio.svg"
-import Seta from "./assets/seta-direita.svg"
-import Lixeira from "./assets/lixeira.svg"
+import People from "../../assets/img-pessoas-inicio.svg"
+import Seta from "../../assets/seta-direita.svg"
+import Lixeira from "../../assets/lixeira.svg"
 
 // JSX
 export default function App ()  {
@@ -15,15 +15,28 @@ export default function App ()  {
   const inputIdade = useRef()
 
   async function adicionarUser() {
-    const data = await axios.post("http://localhost:3001/users", { name: inputNome.current.value, age: inputIdade.current.value, })
+    const { data: newUser } = await axios.post("http://localhost:3001/users", { name: inputNome.current.value, age: inputIdade.current.value, })
     
-    // setUsers([...users,{id: Math.random(), nome: inputNome.current.value, idade: inputIdade.current.value}])
+    setUsers([...users, newUser])
     // spread operator (...)
-
-    console.log(data)
   }
 
-  function excluirUser(userId) {
+  useEffect(() => {
+    async function fetchUsers() {
+      const {data: newUsers} = await axios.get("http://localhost:3001/users")
+      setUsers(newUsers)
+    }
+
+    fetchUsers()
+  }, [])
+
+  // React Hooks -> useEffect (efeito colateral)
+  // A minha aplicação inicia (A página carregou, useEffect é chamado)
+  // Quando um estado que está no array de dependência do useEffect é alterado
+
+  async function excluirUser(userId) {
+    await axios.delete(`http://localhost:3001/users/${userId}`)
+
     const NovoUsers = users.filter(user => user.id !== userId)
     
     setUsers(NovoUsers)
@@ -48,7 +61,7 @@ export default function App ()  {
             { users.map(user => (
               <User key={user.id}>
 
-              <p>{user.nome}</p> <p>{user.idade}</p>
+              <p>{user.name}</p> <p>{user.age}</p>
 
               <button onClick={() => excluirUser(user.id)}>
                 <img src={Lixeira} alt="lixeira"/>
