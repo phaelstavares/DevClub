@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+}
+
+.space {
+    /*height: 300px;
+    width: 300px;*/
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.one {
+    background: #808080;
+}
+
+.two {
+    background: #008000;
+}
+
+.three {
+    background: #970e0e;
+}
+
+.four {
+    background: #147c7c;
+}
