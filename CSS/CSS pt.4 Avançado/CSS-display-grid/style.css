@@ -18,13 +18,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(100px, auto)); /* Oq vem embaixo que é aplicado no CSS */
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .space {
     /*height: 300px;
     width: 300px;*/
     color: #ffffff;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .one {
