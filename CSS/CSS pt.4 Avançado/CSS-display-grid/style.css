@@ -9,7 +9,7 @@
     width: 100vw;
     background-color: #000000;
     display: grid;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
 
     /* Formas de fazer: */
     grid-template-columns: 100px 1000px 100px;
@@ -29,17 +29,37 @@
 }
 
 .one {
-    background: #808080;
+    background: #515288;
 }
 
 .two {
-    background: #008000;
+    background: #1db41d;
 }
 
 .three {
-    background: #970e0e;
+    background: #a1142c;
 }
 
 .four {
-    background: #147c7c;
+    background: #2cc9c9;
+}
+
+.five {
+    background: #eb1010;
+}
+
+.six {
+    background: #867e7e;
+}
+
+.seven {
+    background: #181ab1;
+}
+
+.eight {
+    background: #c53e88;
+}
+
+.nine {
+    background: #e5ff54;
 }
