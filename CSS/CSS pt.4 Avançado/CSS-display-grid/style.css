@@ -18,7 +18,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(100px, auto)); /* Oq vem embaixo que é aplicado no CSS */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    grid-template-rows: 1fr 5fr 1fr;
 }
 
 .space {
@@ -28,38 +30,25 @@
     font-size: 18px;
 }
 
-.one {
-    background: #515288;
+header {
+    background: #333453;
+    grid-column: 1/4;
 }
 
-.two {
+nav {
+    background: #2cc9c9;
+    grid-column: ;
+}
+
+main {
     background: #1db41d;
 }
 
-.three {
-    background: #a1142c;
-}
-
-.four {
-    background: #2cc9c9;
-}
-
-.five {
-    background: #eb1010;
-}
-
-.six {
-    background: #867e7e;
-}
-
-.seven {
-    background: #181ab1;
-}
-
-.eight {
-    background: #c53e88;
-}
-
-.nine {
+aside {
     background: #e5ff54;
+}
+
+footer {
+    background: #a1142c;
+    grid-column: 1/4;
 }
