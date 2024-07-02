@@ -21,6 +21,12 @@
     grid-template-columns: 1fr 3fr 1fr;
 
     grid-template-rows: 1fr 5fr 1fr;
+
+    grid-template-areas: 
+    "header header header"
+    "nav main aside"
+    "footer footer footer"
+    ;
 }
 
 .space {
@@ -32,23 +38,25 @@
 
 header {
     background: #333453;
-    grid-column: 1/4;
+    grid-area: header;
 }
 
 nav {
     background: #2cc9c9;
-    grid-column: ;
+    grid-area: nav;
 }
 
 main {
     background: #1db41d;
+    grid-area: main;
 }
 
 aside {
     background: #e5ff54;
+    grid-area: aside;
 }
 
 footer {
     background: #a1142c;
-    grid-column: 1/4;
+    grid-area: footer;
 }
